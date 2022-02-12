@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Consulta Cep</title>
+</head>
+<body>
+    <header>
+       <div class="container_cep">
+           <input type="text" placeholder="CEP">
+           <button type="enviar" onclick="consultaCep()">Buscar</button>
+       </div>
+       <div>
+           <table id="dts">
+               <tr>
+                   <th>Cidade</th>
+                   <th>Rua</th>
+                   <th>Estado</th>
+                   <th>Bairro</th>
+                </tr>
+                <tr>
+                    <td id="cep"></td>
+                    <td id="city"></td>
+                    <td id="address"></td>
+                    <td id="bairro"></td>
+
+                </tr>
+           </table>
+       </div>
+    </header>
+    <script src="js/index.js"></script>
+</body>
+</html>
